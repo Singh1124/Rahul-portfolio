@@ -83,30 +83,167 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
 }
 
 .project-card {
+    background-color: #fff;
     width: 300px;
     background: white;
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    cursor: pointer;
     border-radius: 8px;
 }
-
+.project-card h3{
+    font: size 1.5em;
+    color: #666;
+    transition: color 0.3s ease;
+}
+/*Hover Effect*/
+.project-card:hover{
+    transform: translatey(-10px);
+    background-color: #0073e6;
+    box-shadow: 0 8px 15px rgba(0, 115, 230,0.2);
+}
+.project-card:hover h3{
+    color: #fff;
+}
+.project-card:hover p{
+    color: #e0e0e0;
+}
 /* Skills Section */
+#skills {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Skills List */
 .skills-list {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .skill-item {
-    background-color: #ececec;
-    padding: 10px 15px;
-    margin: 10px;
-    border-radius: 5px;
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+/* Skills Section */
+#skills {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Skills List */
+/* Skills Section */
+#skills {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Skills Container */
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    padding-right: 100%;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.skills-list li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Icons for Skills */
+.skills-list li i {
+    font-size: 1.5em;
+    color: #4f5964;
+}
+
+/* Hover Effect for Skills */
+.skills-list li:hover {
+    color: #0073e6;
+    transform: translateX(10px);
+}
+
+/* Nested Libraries */
+.nested-libraries {
+    list-style: none;
+    padding-left: 20px; /* Indent nested list */
+    margin-top: 10px;
+}
+
+.nested-libraries li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Library Icons */
+.nested-libraries .icon img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for Library Icons */
+.nested-libraries .icon img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Testimonials Section */
 .testimonial-card {
@@ -119,3 +256,92 @@ h2 {
     max-width: 600px;
     margin: 20px auto;
 }
+/* Social Media Links Section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding-right: 50% ;
+
+}
+
+/* Social Media Icons */
+.social-media a {
+    font-size: 2em; /* Make icons bigger */
+    color: inherit; /* Use the original color of the icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation for hover */
+}
+
+/* Hover Effect for Icons */
+.social-media a:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    color: #0073e6; /* Optional: Add a hover color */
+}
+
+/* Send Button Styling */
+/* Contact Section Styling */
+#contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Elements */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Button Styling */
+#contact form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover and Focus Effects */
+#contact form button:hover {
+    background: #45a049;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#contact form button:active {
+    transform: translateY(0);
+    box-shadow: 0 
