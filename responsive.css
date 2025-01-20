@@ -1,0 +1,70 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .cta-btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .social-media a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cta-btn {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    form button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
